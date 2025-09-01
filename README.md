@@ -9,6 +9,10 @@
 > - Regime-aware gating turns a negative expectancy into a positive one  
 > - In the main backtest window, the **GATED** strategy outperforms XBI (return, drawdown, Sharpe, net of costs)
 
+
+  ### Strategy vs Benchmark (XBI)
+![GATED vs XBI](docs/assets/GATEDvsXBI.png)
+
 ---
 
 ## 1) Problem Statement
@@ -92,9 +96,6 @@ Next: Platt / Isotonic scaling, ElasticNet stacking.
 - Sharpe(ann): 1.48 vs 0.20  
 - Beta to XBI: ~0.26 (low)  
 - Daily alpha ≈ +0.16% (NS, t≈0.85, p≈0.39)
-
-  ### Strategy vs Benchmark (XBI)
-![GATED vs XBI](docs/assets/GATEDvsXBI.png)
 
 **Cost sensitivity**  
 Round-trip costs from **1.0% → 2.2%**: returns decay monotonically; edge ≈ 0 around 0.9–1.0% per side.
