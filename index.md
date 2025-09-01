@@ -1,4 +1,5 @@
-(Full notebooks & code → https://github.com/AntonioAmmirati/ml-event-driven-trading-biotech.git )
+(Full notebooks & code → [GitHub Repository](https://github.com/AntonioAmmirati/ml-event-driven-trading-biotech.git))
+
 ### EXECUTIVE MODULE - Machine Learning Event-Driven Trading Framework (Small-Cap Biotech, End-of-Day)
 
 #### Problem Statement  
