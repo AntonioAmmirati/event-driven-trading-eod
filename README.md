@@ -81,6 +81,20 @@ A higher-AUC “shadow” variant (~0.57–0.58 OOF; ~0.63 in 2025Q2) did **not*
 Next: Platt / Isotonic scaling, ElasticNet stacking.
 
 ---
+---
+
+### Rolling / Regime-Aware Skill
+
+<p align="center">
+  <img src="docs/assets/regime_aware.png" alt="Rolling AUC: regime-aware skill over time" width="820">
+</p>
+<p align="center"><i>
+Rolling AUC (window=500). The green line shows the global AUC (~0.56); the red line is the random baseline (~0.50).  
+The meta-gate concentrates exposure when skill is above average.
+</i></p>
+
+**Interpretation.** Extended periods above ~0.56 indicate windows/regimes where the model is reliable;  
+declines toward ~0.52–0.54 motivate gating (reducing participation) to protect P&L.
 
 ## 6) Backtest Results (Net of Costs)
 
