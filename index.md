@@ -100,6 +100,21 @@ Using **forward-purged cross-validation with per-ticker embargo (5 days)**, we o
 
 A “shadow” variant of the model, with modified regime features in the meta gating, reached even higher Area under the curve (AUC ≈ **0.57–0.58 OOF**, ~0.63 in 2025Q2), However, despite the higher classification AUC, realized P&L did not improve, likely due to **imperfect probability calibration**. We believe further calibration (Platt scaling, isotonic regression) and a more regularized stacker (e.g. ElasticNet(l1 + l2) instead of pure Ridge) could allow this higher-AUC model to monetize better. For the current report, we highlight the earlier configuration as the **champion model**, since it delivers stronger realized returns.
 
+---
+
+### Rolling / Regime-Aware Skill
+
+<p align="center">
+  <img src="docs/assets/regime_aware.png" alt="Rolling AUC: regime-aware skill over time" width="820">
+</p>
+<p align="center"><i>
+Rolling AUC (window=500). The green line shows the global AUC (~0.56); the red line is the random baseline (~0.50).  
+The meta-gate concentrates exposure when skill is above average.
+</i></p>
+
+**Interpretation.** Extended periods above ~0.56 indicate windows/regimes where the model is reliable;  
+declines toward ~0.52–0.54 motivate gating (reducing participation) to protect P&L.
+
 **Results (full sample):**
 - **BASE (always-on)**: Sharpe(ann) −1.07, Max DD −30.2%, TotRet −27.8%, expectancy −0.65% per trade.  
 - **FINAL (always-on, regime blend)**:  Sharpe(ann)−1.72, Max DD −30.1%, TotRet −27.6%, expectancy −0.32%.  
@@ -136,6 +151,9 @@ Additional metrics (**log-loss, PR-AUC, precision@k**) are planned as the next s
 
 ---
 **Cost sensitivity** (Notebook 08/09). We stress-tested transaction costs from **100 bps** round-trip (base) up to **220 bps** (severe). Detailed sensitivity tables/plots are reported in Notebook 09; absolute returns decline as costs rise, as expected.
+
+### Cost Sensitivity (Slippage Stress Test)
+![Transaction cost stress test](docs/assets/costs-stresstest.png)
 
 ---
 
