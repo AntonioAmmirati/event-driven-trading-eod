@@ -119,6 +119,7 @@ Round-trip costs from **1.0% → 2.2%**: returns decay monotonically; edge ≈ 0
 ---
 
 Repo pointers
+
 	- Executive details: 00_executive_module.ipynb
  
 	- ML Modeling & CV: 07_ml_experimentation.ipynb
