@@ -122,8 +122,10 @@ Over the **three-month period**, the gated strategy outperformed the biotech ben
 #### Takeaways
 - **Always-on ML models lose money** in this domain; adding regime-awareness is critical.  
 - **The gated model turns a negative expectancy into a positive one**, beating both its baselines and the passive ETF benchmark.
-- 
-An ML-based event-driven strategy can exploit **post-news inefficiencies in small-cap biotech**. Success does not come from predicting everything, but from learning **when to participate and when to step aside** — a regime-aware approach that transforms a losing model into a profitable one.
+
+- An ML-based event-driven strategy can exploit **post-news inefficiencies in small-cap biotech**. Success does not come from predicting everything, but from learning **when to participate and when to step aside** — a regime-aware approach that transforms a losing model into a profitable one.
+
+
 ---
 
 **Metrics :** At this stage, I prioritized **ROC-AUC** to measure the ranking ability of event-driven opportunities.  
@@ -143,6 +145,7 @@ While the first results are promising, it is important to note some limitations 
 - **NLP features**: sentiment is extracted with FinRoBERTa and FinBERT OOF, but in a relatively **basic form**. More domain-specific NLP (e.g., FDA stage context, clinical nuances) could add edge.  
 - **Probability calibration**: probabilities are used raw, without Platt scaling or isotonic regression. Better calibration should improve thresholding and risk management.  
 - **Statistical robustness**: performance improvements, especially with the regime gate, are encouraging but still based on a short window. More data are needed for conclusive evidence.
+  
 ----------------------------------------------------
 Planned improvements include:  
 - Enhanced **options features** with smarter handling of missingness.  
