@@ -119,6 +119,9 @@ Over the **three-month period**, the gated strategy outperformed the biotech ben
 - Beta to XBI: **0.26** (low sector exposure, diversifying)
 - Estimated daily **alpha ≈ +0.16%** The daily **IR ≈ 0.0948** implies **t ≈ 0.78** under i.i.d.; using Newey–West (L=4) we get **tₐ ≈ 0.85** with **p ≈ 0.39**, so the result is not statistically significant on this 68-day sample.
 
+  ### Strategy vs Benchmark (XBI)
+![GATED vs XBI](docs/assets/GATEDvsXBI.png)
+
 #### Takeaways
 - **Always-on ML models lose money** in this domain; adding regime-awareness is critical.  
 - **The gated model turns a negative expectancy into a positive one**, beating both its baselines and the passive ETF benchmark.
