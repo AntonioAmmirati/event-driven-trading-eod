@@ -45,7 +45,7 @@ Signals at T are executed **T+1 at the open** to avoid look-ahead.
 
 ## 3) Methods (Leakage-Aware)
 
-- Validation: Forward **Purged K-Fold + per-ticker Embargo (5d)** (per López de Prado)  
+- Validation: Forward **Purged K-Fold + per-ticker Embargo (5d)** (ispired: Marcos López de Prado)  
 - Model: **Stacking** → XGBoost + Random Forest → Logistic Regression (L2)  
   - XGB: non-linear interactions  
   - RF: variance reduction  
