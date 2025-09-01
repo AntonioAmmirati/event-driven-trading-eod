@@ -99,6 +99,9 @@ Next: Platt / Isotonic scaling, ElasticNet stacking.
 **Cost sensitivity**  
 Round-trip costs from **1.0% → 2.2%**: returns decay monotonically; edge ≈ 0 around 0.9–1.0% per side.
 
+### Cost Sensitivity (Slippage Stress Test)
+![Transaction cost stress test](docs/assets/costs-stresstest.png)
+
 ---
 
 ## 7) Limitations
