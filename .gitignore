@@ -1,0 +1,25 @@
+.env
+.env.*
+data/raw/**
+*.feather
+*.pkl
+.ipynb_checkpoints/
+__pycache__/
+**/checkpoint-*/
+**/events.out.tfevents.*
+.env
+.env.*
+data/raw/**
+data/**/raw/**
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+**/checkpoint-*/
+**/events.out.tfevents.*
+# keep vendor raw data out
+data/raw/**
+data/**/raw/**
+
+# allow processed & samples
+!data/processed/**
+!data/sample/**
