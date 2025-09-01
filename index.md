@@ -115,7 +115,8 @@ The meta-gate concentrates exposure when skill is above average.
 **Interpretation.** Extended periods above ~0.56 indicate windows/regimes where the model is reliable;  
 declines toward ~0.52–0.54 motivate gating (reducing participation) to protect P&L.
 
-**Results (full sample):**
+
+#### Results (full sample):
 - **BASE (always-on)**: Sharpe(ann) −1.07, Max DD −30.2%, TotRet −27.8%, expectancy −0.65% per trade.  
 - **FINAL (always-on, regime blend)**:  Sharpe(ann)−1.72, Max DD −30.1%, TotRet −27.6%, expectancy −0.32%.  
 - **GATED (regime-aware filter)**: Sharpe(ann) +1.36, Max DD −9.2%, TotRet +10.8%, expectancy **+0.98% per trade**.  
